@@ -1,0 +1,46 @@
+<html>
+   <head>
+	
+   <body>
+<center>
+	<h2> CALCULATOR</h2>
+	<br>
+	<form name="calculator">
+	
+         <table>
+            <tr>
+               <td colspan="4">
+                  <input type="text" name="display1" id="display1" disabled>
+               </td>
+            </tr>
+            <tr>
+               <td><input type="button" id="one" value="1" ></td>
+               <td><input type="button" id="two" value="2" ></td>
+               <td><input type="button" id="three" value="3" ></td>
+               <td><input type="button" class="operator" id="plus" value="+" ></td>
+            </tr>
+            <tr>
+               <td><input type="button" id="four" value="4" ></td>
+               <td><input type="button" id="five" value="5" ></td>
+               <td><input type="button" id="six" value="6" ></td>
+               <td><input type="button" class="operator" id="minus" value="-" ></td>
+            </tr>
+            <tr>
+               <td><input type="button" id="seven" value="7" ></td>
+               <td><input type="button" id="eight" value="8" ></td>
+               <td><input type="button" id="nine" value="9" ></td>
+               <td><input type="button" class="operator" id="times" value="x" ></td>
+            </tr>
+            <tr>
+               <td><input type="button" id="clear" id="clear" value="c" onclick="calculator.display.value = ''"></td>
+               <td><input type="button" id="zero" value="0" onclick="calculator.display.value += '0'"></td>
+               <td><input type="button" id="doit" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
+               <td><input type="button" class="operator" id="div" value="/" onclick="calculator.display.value += '/'"></td>
+            </tr>
+         </table>
+	</center>
+      </form>
+	<script type = "text/javascript" src = "func.js"></script>
+   </body>
+   </head>
+</html>

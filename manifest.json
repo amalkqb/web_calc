@@ -1,0 +1,18 @@
+{
+ "manifest_version": 2,
+ "name": "webcalc",
+ "description": "A simple calculator",
+ "version": "1",
+ "author": "Amal Karayi",
+
+"browser_action": {
+   
+   "default_title": "Have a good day",
+
+   "default_popup": "calc.html"
+},
+
+"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self",
+
+ "permissions": ["activeTab"]
+}
